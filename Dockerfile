@@ -7,5 +7,6 @@ COPY contapache.conf /etc/apache2/sites-available/
 COPY doit.sh /root
 CMD ["/root/doit.sh"]
 
-#CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
+EXPOSE 80
+
 ENTRYPOINT [ "/bin/bash" ]
